@@ -1,0 +1,5 @@
+node_modules
+variebles.env
+public/uploads/grupos/*
+public/uploads/perfiles/*
+

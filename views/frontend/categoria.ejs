@@ -1,0 +1,13 @@
+<div class="contenedor proximos-eventos">
+    <h1><%= pagina %></h1>
+    <% if (meetis.length > 0) { %>
+    <div class="grid columnas-md-3 ">
+        <% moment.locale("es");%>
+        <% meetis.forEach(meeti => { %>    
+            <%- include ("../partials/cardMeeti.ejs", {meeti : meeti}) %>      
+        <% }) %>
+    </div>
+    <% } else { %>
+        <h2>No hay Meeti's en esta categoria</h2>
+    <% } %>
+</div>
